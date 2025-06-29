@@ -66,14 +66,15 @@
 .controlBtn {
   background: transparent;
   padding: 0.5rem 1rem;
-  background-color: var(--accent);
-  color: white;
+  background-color: none;
+  color: var(--accent);
   border-radius: var(--radius);
-  border-color: var(--accent);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: 2px solid var(--accent);
 }
 
 .controlBtn:hover {
-  background: var(--highlight);
+  color: var(--highlight);
+  border: 2px solid var(--highlight);
 }

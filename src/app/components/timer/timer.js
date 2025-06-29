@@ -83,9 +83,9 @@ const Timer = () => {
   };
 
   const progress = calculateProgress();
-  let progressColor = '#D35D6E';
-  if (progress >= 50) progressColor = '#E6A8D7';
-  if (progress >= 80) progressColor = '#9A7B4F';
+  let progressColor = '#94C8A9';
+  if (progress >= 50) progressColor = '#A9CAEB';
+  if (progress >= 80) progressColor = '#FDA8B2';
 
   return (
     <div className={styles.timerContainer}>
