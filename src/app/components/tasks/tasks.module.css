@@ -1,0 +1,154 @@
+.tasksContainer {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.tasksHeader {
+  margin-bottom: 1.5rem;
+}
+
+.tasksTitle {
+  font-size: 1.5rem;
+  color: var(--deep-accent);
+}
+
+.taskInputContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.taskInput {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.taskInput:focus {
+  border-color: var(--accent);
+}
+
+.addTaskBtn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.addTaskBtn:hover {
+  background: var(--deep-accent);
+  transform: translateY(-2px);
+}
+
+.taskControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.priorityLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+.highPriorityCheckbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--highlight);
+  cursor: pointer;
+}
+
+.filterSelect {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.taskList {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.taskItem {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.3s;
+  cursor: grab;
+}
+
+.taskItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.taskCheckbox {
+  margin-right: 1rem;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.taskText {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.taskActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.taskActions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--light-text);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  padding: 0.3rem;
+}
+
+.taskActions button:hover {
+  color: var(--deep-accent);
+}
+
+.highPriority {
+  color: #E37878;
+}
+
+.completed {
+  opacity: 0.7;
+}
+
+.completed .taskText {
+  text-decoration: line-through;
+  color: var(--light-text);
+}

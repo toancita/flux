@@ -1,0 +1,79 @@
+.playerContainer {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 4px 8px var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.trackInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.musicIcon {
+  font-size: 1.8rem;
+  min-width: 40px;
+  text-align: center;
+  color: var(--deep-accent);
+  transition: transform 0.3s ease;
+}
+
+.musicIcon.playing {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.trackDetails {
+  overflow: hidden;
+}
+
+.trackTitle {
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text);
+}
+
+.trackArtist {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--light-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerControls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.playerBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--deep-accent);
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.playerBtn:hover {
+  transform: scale(1.1);
+  color: var(--highlight);
+}
