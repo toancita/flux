@@ -1,9 +1,9 @@
 # 🍎 Flux - Productivity App (en desarrollo)
 
-**Flux** es una elegante aplicación de productividad que combina:
+**Flux** es una aplicación de productividad que combina:
 - ⏱️ Temporizador Pomodoro
 - 📝 Lista de tareas
-- 🎵 Reproductor de música para concentración
+- 🎵 Reproductor de música para concentración con mis playlists favoritas
 
 ## Características Principales
 
@@ -16,8 +16,8 @@
 ### Sistema de Tareas
 - Priorización
 - Filtrado por estado (todas/completadas/pendientes)
-- Edición y arrastre para reorganizar
-- Persistencia en localStorage
+- Función de arrastre para reorganizar
+- Guardado en localStorage
 
 ### Reproductor de música
 - Playlists preconfiguradas para concentración
